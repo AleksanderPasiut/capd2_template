@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(cape_example)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS YES)
+
 add_executable(${PROJECT_NAME} src/main.cpp)
 
 add_dependencies(${PROJECT_NAME} cape)
