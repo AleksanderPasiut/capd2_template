@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include <capd/capdlib.h>
+#include <capd/mpcapdlib.h>
 
 int main()
 {
@@ -12,9 +13,15 @@ int main()
 
     using namespace capd;
 
-    IMatrix mat = IMatrix::Identity(3);
+    {
+        IMatrix mat = IMatrix::Identity(3);
+        std::cout << mat << '\n';
+    }
 
-    std::cout << mat << '\n';
+    {
+        MpIMatrix mat = MpIMatrix::Identity(4);
+        std::cout << mat << '\n';
+    }
     
     return 0;
 }
