@@ -18,10 +18,14 @@ int main()
         std::cout << mat << '\n';
     }
 
+    #ifdef __HAVE_MPFR__
+
     {
         MpIMatrix mat = MpIMatrix::Identity(4);
         std::cout << mat << '\n';
     }
+
+    #endif
     
     return 0;
 }
