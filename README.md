@@ -5,11 +5,11 @@ Template for CAPD2-based project
 
 Clone the repository:
 
-    git clone https://github.com/AleksanderPasiut/capd2
+    git clone https://github.com/AleksanderPasiut/capd2_template
     
 Enter the repository, update submodules, create the build folder, configure the repository and then build:
 
-    cd capd2
+    cd capd2_template
     git submodule update --init --recursive
     mkdir build
     cd build
