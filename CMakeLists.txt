@@ -14,6 +14,7 @@ target_compile_options(capd2 PRIVATE -Wall -Wextra)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE -lstdc++)
+target_link_libraries(${PROJECT_NAME} PRIVATE -lm)
 
 link_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/src/capd2)
 target_link_libraries(${PROJECT_NAME} PRIVATE capd2)
