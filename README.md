@@ -20,13 +20,4 @@ Enter the repository, update submodules, create the build folder, configure the 
     cmake ..
     make
 
-Above commands will build the library only without tests or examples. Krak component also will not be built. In order to build krak, it is necessary to append `-DBUILD_KRAK=true` option when calling `cmake` command. In order to build examples, it is necessary to append `-DBUILD_EXAMPLE_EXECUTABLES=true` option when calling `cmake` command. In order to build and launch tests, look into section "Building and executing tests".
-
-## Building and executing tests
-
-In order to build and execute tests, it necessary to run `cmake` command with option `-DBUILD_TEST_EXECUTABLES=true`, then build the tests and execute them with commands:
-
-    make
-    make tests
-   
-when in `capd2/build` directory.
+Above commands will build a CAPD library and an example executable.
