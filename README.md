@@ -1,6 +1,10 @@
 # CAPD2 template
 Template for CAPD2-based project
 
+## Prerequisites
+
+In order to build the software it is necessary to have git and cmake tools installed along with a c++ compiler.
+
 ## Getting started
 
 Clone the repository:
