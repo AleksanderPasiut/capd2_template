@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(capd2_template)
 
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS YES)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
